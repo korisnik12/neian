@@ -1,0 +1,80 @@
+Pawn Language PDF na srpskom
+
+1. String - string je tip podataka koji se koristi za predstavljanje teksta ili niske znakova.
+
+2. Operatori:
+
+Logicki operatori:
+
+&& (i, AND): Vraca true ako su oba uslova tacna.
+|| (ili, OR): Vraca true ako je barem jedan uslov tacan.
+! (negacija, NOT): Invertuje logicku vrednost, tj. vraca suprotnu vrednost.
+
+Relacioni Operatori:
+
+== (jednako): Proverava da li su dve vrednosti jednake.
+!= (nije jednako): Proverava da li su dve vrednosti razlicite.
+> (vece od): Proverava da li je prva vrednost veca od druge.
+< (manje od): Proverava da li je prva vrednost manja od druge.
+>= (vece ili jednako): Proverava da li je prva vrednost veca ili jednaka drugoj.
+<= (manje ili jednako): Proverava da li je prva vrednost manja ili jednaka drugoj.
+
+3. Float:
+float je tip podataka u programiranju koji se koristi za predstavljanje decimalnih brojeva sa pomicnim zarezom. 
+Drugim recima, float podaci imaju decimalni deo i koriste se kada želimo da predstavimo brojeve sa tacnošcu na decimalnim mestima.
+
+4. Specifikatori naprimer:
+%s - Ukratko, %s je format specifikator koji se koristi za rad sa tekstualnim podacima (niskama) prilikom formatiranja niski u jezicima kao što su C i C++.
+
+%d - %d je format specifikator koji se koristi za rad sa celobrojnim vrednostima prilikom formatiranja niski u jezicima kao što su C i C++.
+
+%i - Ukratko, %i je format specifikator koji se koristi za rad sa celobrojnim vrednostima, ukljucujuci i decimalne vrednosti u oktalnom ili heksadecimalnom formatu.
+
+%f - Ukratko, %f je format specifikator koji se koristi za rad sa decimalnim brojevima (floating-point numbers) prilikom formatiranja niski u jezicima kao što su C i C++.
+
+if - Uslov u if izrazu može biti bilo koji izraz koji se procenjuje kao logicka vrednost (true ili false). 
+Uobicajeno se koriste uslovne operacije (npr. >, <, ==, !=, itd.) za proveru odrecenih uslova.
+Ukoliko želimo izvršiti odrecene akcije kada je uslov netacan (false), možemo koristiti if-else konstrukciju, 
+koja dodatno omogucava definisanje bloka koda koji ce se izvršiti kada uslov nije ispunjen.
+
+else - else konstrukcija igra kljucnu ulogu u logickim grananjima i donošenju odluka u programiranju, 
+omogucavajuci programima da se prilagode razlicitim situacijama i izvršavaju odgovarajuce akcije na osnovu uslova koji su zadovoljeni.
+
+for - for petlje su veoma korisne kada želimo da ponovimo odrecene akcije tacno odreceni broj puta, 
+kao i kada radimo sa nizovima i kolekcijama podataka. Ukoliko ne znamo unapred koliko puta želimo da ponavljamo, obicno koristimo while ili do-while petlje.
+
+format - Prikazivanje podataka korisniku: Formatiranje omogucava programu da prikaže podatke na nacin koji je razumljiv i prikladan za korisnika. Na primer, 
+kada ispisujemo rezultate, poruke ili druge informacije na ekran, formatiranje omogucava da te informacije budu jasne i pregledne.
+
+
+varijable - Varijabla je osnovni koncept u programiranju i predstavlja imenovanu lokaciju u memoriji koja se koristi za skladištenje i manipulaciju podacima. Varijable imaju odreceni tip podataka koji definiše vrstu vrednosti koju mogu da sadrže, kao što su celobrojne vrednosti, decimalni brojevi, tekstualni podaci i druge vrste podataka.
+
+Kada se deklariše varijabla, program rezerviše odgovarajucu memoriju u koju ce se cuvati vrednost te varijable. Ovo omogucava programu da cuva i obracuje podatke tokom izvršavanja programa.
+
+Prilikom deklaracije varijable, potrebno je odrediti njen tip podataka i dati joj jedinstveno ime. Na primer:
+
+new  broj; // Deklaracija celobrojne (integer) varijable sa imenom "broj"
+new Float:Pos_X; // Deklaracija decimalne (floating-point) varijable sa Pozicijom X 
+new Igraci[MAX_PLAYERS]; // Deklaracija niza koji imaju velicinu konstante MAX_PLAYERS
+
+
+#define - Prednost korišcenja #define je u tome što omogucava jednostavno definisanje konstanti 
+koje se mogu koristiti na više mesta u kodu, 
+a njihova vrednost se može lako promeniti na jednom mestu ako je potrebno. 
+Ovo cini kod citljivijim i održljivijim. Mecutim, treba biti pažljiv prilikom korišcenja makroa, 
+jer pretjerana upotreba ili nepravilno definisanje makroa može dovesti do nepoželjnih efekata u kodu.
+
+#include  - Ukratko, #include se koristi za ukljucivanje sadržaja header fajlova u program, 
+što omogucava korišcenje funkcija,
+ konstanti i drugih elemenata definisanih u tim fajlovima u glavnom programu. 
+ Ovo olakšava organizaciju koda i omogucava ponovno korišcenje koda u razlicitim delovima programa.
+
+stock - implementira funkciju u skripti ne prepoznaje je kao public function te je ne ocitava pri loadu nego pri zavrsavaju funkcije
+
+Forward - je funkcija koja ne ucitava odmah nego se implementira u skripti
+
+public -  public je keyword kojim mozete praviti globalne varijable ili funkcije koje mogu biti pozvane od strane abstraktne masine (servera)
+
+enum - Enumeracija ili nabrajanje, ili enum, je simboličko ime za skup vrijednosti. Enumeracije se tretiraju kao tipovi podataka i možete ih koristiti za kreiranje skupova konstanti za korištenje s varijablama i svojstvima.
+
+static - static je keyword sa kojim ogranicavas pristupacnost odredjenoj varijabli ili funkciji unutar neke sekcije
